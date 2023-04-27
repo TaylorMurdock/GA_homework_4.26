@@ -153,15 +153,15 @@ for (let i = 0; i < StarWars.length; i++) {
 }
 // Iterate over the StarWars array again and print each character's name as well as the value of i
 
-const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
-for (let i = 0; i < StarWars.length; i++) {
-	console.log(`Character ${StarWars[i]}'s index value is ${i}`);
+const StarWars2 = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+for (let i = 0; i < StarWars2.length; i++) {
+	console.log(`Character ${StarWars2[i]}'s index value is ${i}`);
 }
 	
 
 // Bonus Figure out how to iterate over every second element of the StarWars array, starting with the first element. => Han, R2D2, Leia
 // had to do research on the third part of the control panel to make it skip over every other one
-const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
-for (let i = 0; i < StarWars.length; i += 2) {
-	console.log (StarWars[i]);
+const StarWars3 = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+for (let i = 0; i < StarWars3.length; i += 2) {
+	console.log (StarWars3[i]);
 }
