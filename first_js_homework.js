@@ -38,7 +38,7 @@ console.log(g)
 // console.log g
 
 
-// Did you use const, let or var? Why did you choose the one you chose?
+// Did you use const, let or var? Why did you choose the one you chose
 //I used all three, i used let for the numbers because const is not used for numbers. I used const for 'kevin' and false because those two have no need to be changed. the var was used because everything about the variable could change.
 
 // What happens if you don't use const , let or var? Do you get an error? If so what does it say?
@@ -88,3 +88,80 @@ console.log(letters);
 
 
 // SECTION FOUR
+
+// A for loop performs the same operation as a while loop. But what are the key differences, if any? What are the similarities?
+//  both loops are used to repeat a set of instructions until it says stop. a for loop however is used when you know how many times you want the loop to run for. a while loop is used when you are not sure how many times the loop will will.
+
+// for (let i = 0; i < 100; i++) {
+// 	console.log('Without you, today\'s emotions are the scurf of yesterday\'s');
+// }
+// What are the three components of the control panel? 
+// The first part of the control panel is: let i = 0
+// The second part of the control panel is: i < 100
+// The third part of the control panel is: i++
+
+// Write a for loop that will console.log the numbers 0 to 999.
+for (let i = 0; i < 1000; i++) {
+	console.log(i);
+}
+
+// Bonus Challenge (optional):
+
+// What is the difference between \ (backslash, above the enter/return key) and / (forward slash or just slash, shares the key with the ?)? What is \ doing in the string?
+//   console.log('Without you, today\'s emotions are the scurf of yesterday\'s');
+//   console.log("Without you, today's emotions are the scurf of yesterday's");
+// i did some research on this so because i did not know the answer to this. a forward slash (/) is used as a sign for division and also a delimiter in an expression. a backward slash (\) is used to escaped special characters in strings.
+// FROM THE WEB In the example code you provided, the backslash is used to escape the single quote character ' in the string literal, so that the string can be properly enclosed in single quotes without causing a syntax error. The following two statements are equivalent and will both output the same string to the console. (Without you, today's emotions are the scurf of yesterday's)
+
+// Using a postfix operator i-- instead of i++, write a for loop that iterates in reverse. Console.log a countdown from 999 to 0.
+for (let i = 999; i > -1; i--) {
+	console.log(i);
+}
+
+// Write a for loop that uses string concatenation to send a message to the console as well as the current value of i.
+
+// The loop should run from 1 to 10.
+
+// Expected Result:
+// The value of i is: 1 of 10
+// The value of i is: 2 of 10
+// The value of i is: 3 of 10
+// The value of i is: 4 of 10
+// The value of i is: 5 of 10
+// The value of i is: 6 of 10
+// The value of i is: 7 of 10
+// The value of i is: 8 of 10
+// The value of i is: 9 of 10
+// The value of i is: 10 of 10
+
+for (let i = 1; i < 11; i++) {
+	console.log ("The value of i is: " , i , " of 10");
+}
+
+// BONUS Rewrite the above loop using String Interpolation/Template Literals instead of concatenation
+// did have help from online research on String Interpolation
+for (let i = 1; i < 11; i++) {
+	console.log (`The value of i is: ${i} of 10`);
+}
+
+//const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+// Iterate over the StarWars array and print each element to the console.
+// took me a while to figure out the console.log for this. start with just (StarWars) then went to (i) then resulted in doing some research.
+const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+for (let i = 0; i < StarWars.length; i++) {
+	console.log(StarWars[i]);
+}
+// Iterate over the StarWars array again and print each character's name as well as the value of i
+
+const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+for (let i = 0; i < StarWars.length; i++) {
+	console.log(`Character ${StarWars[i]}'s index value is ${i}`);
+}
+	
+
+// Bonus Figure out how to iterate over every second element of the StarWars array, starting with the first element. => Han, R2D2, Leia
+// had to do research on the third part of the control panel to make it skip over every other one
+const StarWars = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
+for (let i = 0; i < StarWars.length; i += 2) {
+	console.log (StarWars[i]);
+}
