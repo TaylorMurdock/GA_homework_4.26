@@ -165,3 +165,6 @@ const StarWars3 = ["Han", "C3PO", "R2D2", "Luke", "Leia", "Anakin"];
 for (let i = 0; i < StarWars3.length; i += 2) {
 	console.log (StarWars3[i]);
 }
+
+
+
